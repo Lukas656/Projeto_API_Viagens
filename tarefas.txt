@@ -1,0 +1,12 @@
+ 
+  Tarefas para o site viagens
+
+[] criar uma pasta com as chamadas Express
+[] Usar o axios pra receber as chamadas 
+[] Conexao com o banco de dados
+[] Conectar o login
+[] Criar Conta
+[] Criar viagens para cada usuario e opçao de CRUD nas viagens do banco
+[] Pagina Sobre criar o html na pasta pages/Sobre/index.js
+
+
