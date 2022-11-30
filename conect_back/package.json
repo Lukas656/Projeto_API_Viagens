@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "axios": "^1.2.0",
     "body-parser": "^1.20.1",
     "cors": "^2.8.5",
     "express": "^4.18.2",
@@ -9,7 +10,6 @@
   "name": "conect_back",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "start": "nodemon server.js",
     "test": "jest"

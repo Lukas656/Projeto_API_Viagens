@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const { MongoClient } = require('mongodb');
+const funcLogin = require("./dbfuncs");
 const bodyParser = require('body-parser');
 const app = express();
 
@@ -17,13 +17,31 @@ async function getLogin() {
     return db.collection("Login");
 };
 
+// Exibe mensagem se esta funcionando a conexao
+app.get('/', async (req, res) => {
+    res.status(200).send({ success: true, message: "Sistema Funcionando!!!" })
+});
+
 //  Pegar os Dados
 app.get('/login', async (req, res) => {
-    const loginCollection = await getLogin();
-    const logins = await loginCollection.find().toArray();
+    let logins = await funcLogin.getAllLogin();
     console.log(logins)
-    res.send(logins)
+    res.status(200).send(logins)
 });
+
+// retorna usuario pelo id
+app.get('/user/:id', async(req, res)=>{
+    let user = await funcLogin.getLoginByID(req.params.id);
+    res.status(200).send(user)
+})
+// verifica se o usuario e senha existem
+app.get('/user', async(req, res)=>{
+    let user = await funcLogin.autentica(req.body);
+    console.log(user);
+    res.status(200).send(user)
+})
+
+
 
 
 
