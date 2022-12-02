@@ -34,10 +34,13 @@ app.get('/user/:id', async(req, res)=>{
     let user = await funcLogin.getLoginByID(req.params.id);
     res.status(200).send(user)
 })
+
 // verifica se o usuario e senha existem
 app.get('/user', async(req, res)=>{
-    let user = await funcLogin.autentica(req.body);
-    console.log(user);
+    let userLogin = req.body
+    console.log(userLogin.Usuario);
+    let user = await funcLogin.autentica(userLogin);
+    console.log(user)
     res.status(200).send(user)
 })
 

@@ -27,15 +27,24 @@ async function getAllLogin() {
 }
 async function getLoginByID(id) {
     const conectionDb = await getLogin();
-    const login = await conectionDb.findOne({ _id: ObjectID(id)});
+    const login = await conectionDb.findOne({ _id: ObjectID(id) });
     return login;
 }
 
 
-async function autentica(login, senha) {
-    const conectionDb = await getLogin();
-    login = getAllLogin()
-    console.log(login.Usuario);
+async function autentica(Buscalogin) {
+    const logins = await getAllLogin();
+    console.log("lista de logins.............................")
+    // console.log(logins)
+const user = Buscalogin.Usuario
+
+logins.forEach(login => {
+        if (login.Usuario == user) {
+            console.log(login.Usuario + ' ' + 'Compativel !!!!')
+        } else {
+            console.log(login.Usuario + ' ' + 'incompativel')
+        }
+    });
 }
 
 
