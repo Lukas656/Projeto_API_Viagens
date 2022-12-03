@@ -19,32 +19,30 @@ async function getLogin() {
     return db.collection("Login");
 };
 
-
+/* Exibe todos os os lçogins do banco*/
 async function getAllLogin() {
     const conectionDb = await getLogin();
     const logins = await conectionDb.find().toArray();
     return logins
 }
+/* Verifica Se o Usuário existe no banco de dados Login*/
 async function getLoginByID(id) {
     const conectionDb = await getLogin();
     const login = await conectionDb.findOne({ _id: ObjectID(id) });
-    return login;
+    return login.Login;
 }
 
-
-async function autentica(Buscalogin) {
+/* Verifica Se o Usuário existe no banco de dados Login*/
+async function autentica(buscaLogin, buscarSenha) {
     const logins = await getAllLogin();
-    console.log("lista de logins.............................")
-    // console.log(logins)
-const user = Buscalogin.Usuario
-
-logins.forEach(login => {
-        if (login.Usuario == user) {
-            console.log(login.Usuario + ' ' + 'Compativel !!!!')
-        } else {
-            console.log(login.Usuario + ' ' + 'incompativel')
+    let msg = 'Usuário não Encontrado, verifique se os dados estão corretos!!'
+    logins.forEach(login => {
+        if (login.Usuario == buscaLogin && login.Senha == buscarSenha) {
+            msg = `Usuário ${login.Usuario} Encontrado !!!`;
         }
     });
+    return msg
+
 }
 
 
