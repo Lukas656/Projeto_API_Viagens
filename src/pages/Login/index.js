@@ -15,12 +15,12 @@ function Login() {
                         <h1>Login</h1>
                         <div className="textfield">
                             <label for="usuario">Usuário</label>
-                            <input type="text" name="usuario" placeholder="Usuário" autoFocus required></input>
+                            <input type="text" name="usuario" id="usuario" placeholder="Usuário" autoFocus required></input>
                         </div>
 
                         <div className="textfield">
                             <label for="senha">Senha</label>
-                            <input type="password" name="senha" placeholder="Senha" required></input>
+                            <input type="password" name="senha" id="senha" placeholder="Senha" required></input>
                         </div>
 
                         <p id="cc">Ainda não tem uma conta? <a href="#">Criar conta</a></p>
