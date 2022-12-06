@@ -36,10 +36,10 @@ app.get('/user/:id', async(req, res)=>{
 })
 
 // verifica se o usuario e senha existem
-app.get('/user', async(req, res)=>{
+app.post('/user', async(req, res)=>{
     let userLogin = req.body
     console.log(userLogin);
-    let user = await funcLogin.autentica(userLogin.Usuario, userLogin.Senha);
+    let user = await funcLogin.autentica(userLogin.Login, userLogin.Senha);
     console.log(user)
     res.status(200).send({success: true, user})
 })

@@ -37,8 +37,8 @@ async function autentica(buscaLogin, buscarSenha) {
     const logins = await getAllLogin();
     let msg = 'Usuário não Encontrado, verifique se os dados estão corretos!!'
     logins.forEach(login => {
-        if (login.Usuario == buscaLogin && login.Senha == buscarSenha) {
-            msg = `Usuário ${login.Usuario} Encontrado !!!`;
+        if (login.Login == buscaLogin && login.Senha == buscarSenha) {
+            msg = `Usuário ${login.Login} Encontrado !!!`;
         }
     });
     return msg
