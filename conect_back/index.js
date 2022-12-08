@@ -8,14 +8,7 @@ const port = 5000;
 app.use(bodyParser.json())
 app.use(cors())
 
-async function getLogin() {
-    // conexão com o banco de dados
-    const uri = "mongodb://localhost:27017";
-    const voo = new MongoClient(uri);
-    await voo.connect();
-    const db = voo.db("primeiroDB");
-    return db.collection("Login");
-};
+
 
 // Exibe mensagem se esta funcionando a conexao
 app.get('/', async (req, res) => {
@@ -30,23 +23,35 @@ app.get('/login', async (req, res) => {
 });
 
 // retorna usuario pelo id e exibe o email
-app.get('/user/:id', async(req, res)=>{
+app.get('/user/:id', async (req, res) => {
     let user = await funcLogin.getLoginByID(req.params.id);
-    res.status(200).send({success: true, user})
+    res.status(200).send({ success: true, user })
 })
 
 // verifica se o usuario e senha existem
-app.post('/user', async(req, res)=>{
+app.post('/user', async (req, res) => {
     let userLogin = req.body
     console.log(userLogin);
     let user = await funcLogin.autentica(userLogin.Login, userLogin.Senha);
     console.log(user)
-    res.status(200).send({success: true, user})
+    res.status(200).send({ success: true, user })
 })
 
 
+// Criar usuario
+app.post('/newuser', async (req, res) => {
+    let userLogin = req.body
+    let user = await funcLogin.criarUser(userLogin);
+    console.log(user)
+    res.status(200).send({ success: true, user})
+})
 
 
+// Apagar tudo
+app.delete('/deletmany', async (req, res) => {
+    let users = await funcLogin.deletaUsers();
+    res.status(200).send({ success: true, users })
+})
 
 
 

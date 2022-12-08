@@ -8,19 +8,17 @@ function Cadastro() {
     const btncadastro = async function () {
         let btn = document.querySelector('btn-login');
         let usuario = document.getElementById('usuario').value
-        let email = document.getElementById('email').value
+        let login = document.getElementById('email').value
         let senha = document.getElementById('senha').value
-        let user = { Login: usuario,Email: email,  Senha: senha }
+
+        let user =  { Usuario: usuario, Login: login, Senha: senha }
         console.log(user)
-
-        let res = await axios.post("http://localhost:5000/post", user)
-        let data = await res.data;
-        alert(data.user);
-        console.log(data.user);
-    }
-
-
-
+           let res = await axios.post("http://localhost:5000/newuser", user)
+           let data = await res.data;
+           alert(data.user);
+           console.log(data.user);
+        }
+    
     return (
         <>
             <Header />
@@ -42,7 +40,7 @@ function Cadastro() {
                             <label for="senha">Senha</label>
                             <input type="password" name="senha" id="senha" placeholder="Senha" required></input>
                         </div>
-                        <input type="submit" value="Salvar" className="btn-login" onClick={btncadastro}></input>
+                        <input type={"submit"} value="Salvar" className="btn-login" onClick={btncadastro}></input>
                     </div>
                 </div>
             </form>

@@ -38,7 +38,7 @@ function Login() {
                             <label for="senha">Senha</label>
                             <input type="password" name="senha" id="senha" placeholder="Senha" required></input>
                         </div>
-                        <input type="submit" value="Entrar" className="btn-login" onClick={btnLogin}></input>
+                        <input type={"submit"}  value="Entrar" className="btn-login" onClick={btnLogin}></input>
                     </div>
                 </div>
             </form>

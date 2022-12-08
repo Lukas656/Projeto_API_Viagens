@@ -1,4 +1,5 @@
 const { MongoClient, ObjectID } = require('mongodb');
+const { useSearchParams } = require('react-router-dom');
 
 
 async function getLogin() {
@@ -31,6 +32,22 @@ async function getLoginByID(id) {
     const login = await conectionDb.findOne({ _id: ObjectID(id) });
     return login.Login;
 }
+/* Criar um novo usuario*/
+async function criarUser(newUser) {
+    const conectionDb = await getLogin();
+    novoUsuario = "Nao foi possivel Criar este usuario"
+    
+if(newUser.Usuario === "" && newUser.Login === "" && newUser.Senha === ""){
+    novoUsuario = "Nao foi possivel Criar este usuario Ainda falta campos para preencher"
+}if(newUser.Usuario === "" || newUser.Login === "" || newUser.Senha === ""){
+    novoUsuario = "Nao foi possivel Criar este usuario Ainda falta campos para preencher"
+}
+else{
+    console.log(newUser);
+    novoUsuario = await conectionDb.insertOne(newUser);
+}
+    return novoUsuario;
+}
 
 /* Verifica Se o Usuário existe no banco de dados Login*/
 async function autentica(buscaLogin, buscarSenha) {
@@ -41,15 +58,24 @@ async function autentica(buscaLogin, buscarSenha) {
             msg = `Usuário ${login.Login} Encontrado !!!`;
         }
     });
-    return msg
-
+    return msg    
 }
+
+// apaga tudo
+async function deletaUsers() {
+    const conectionDb = await getLogin();
+    const cursos = conectionDb.deleteMany()
+    return cursos;
+}
+
 
 
 const funcLogin = {
     getAllLogin,
     getLoginByID,
-    autentica
+    criarUser,
+    autentica,
+    deletaUsers
 }
 
 module.exports = funcLogin;

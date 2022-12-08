@@ -3,13 +3,28 @@
 
 Back-end:
 
-[] criar uma pasta com as chamadas Express
 [] Usar o axios pra receber as chamadas 
-[] Conexao com o banco de dados
-[] Conectar o login
-[] Criar Conta
-[] Criar viagens para cada usuario e opçao de CRUD nas viagens do banco
 [] Pagina Sobre criar o html na pasta pages/Sobre/index.js
+[x] Conexao com o banco de dados
+[x] Conectar o login
+[x] Criar Conta
+
+[] Criar viagens para cada usuario e opçao de CRUD nas viagens do banco
+Neste exemplo o usuario vai ter acesso ao "listViagens" onde vai poder criar/editar/apagar as suas 
+{
+		"Usuario": "Lucas Santos ",
+		"Login": "lucas2022@gmail.com",
+		"Senha": "lucas2022",
+	  "listViagens":
+	{
+		"vooId1": {"origem": "Sao paulo","destino": "Rio de Janeiro","passagem": "120,00"},
+		"vooId2": {"origem": "Sao paulo","destino": "Rio de Janeiro","passagem": "120,00"}
+	}
+
+	
+}
+
+
 
 Front-end:
 
