@@ -1,4 +1,5 @@
 import Header from "../../component/Header"
+import Footer from "../../component/Header/footer"
 import './style.css'
 import axios from 'axios';
 
@@ -18,7 +19,7 @@ function Cadastro() {
            alert(data.user);
            console.log(data.user);
         }
-    
+
     return (
         <>
             <Header />
@@ -40,10 +41,12 @@ function Cadastro() {
                             <label for="senha">Senha</label>
                             <input type="password" name="senha" id="senha" placeholder="Senha" required></input>
                         </div>
+                        <p>Já tem uma conta?  <a href="http://localhost:3000/Login">Fazer Login</a></p>
                         <input type={"submit"} value="Salvar" className="btn-login" onClick={btncadastro}></input>
                     </div>
                 </div>
             </form>
+            <Footer />
         </>
     )
 }

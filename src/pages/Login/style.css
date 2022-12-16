@@ -68,7 +68,12 @@
     margin: 0;
 
 }
-
+p{
+    color: #ffffff;
+}
+p a{
+    color: #00ff88;
+}
 #cc{
     color: #00ff88;
     font-weight: 400;

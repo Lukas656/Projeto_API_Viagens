@@ -21,6 +21,7 @@ a:hover {
   
 nav {
     display: flex;
+    padding: 5px;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
@@ -123,4 +124,25 @@ nav {
   
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
+}
+
+
+footer{
+  color: #fff;
+  background: #23232e;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  padding: 5px;
+  grid-template-columns: 80% 20%;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.imagemLogo{
+  background-image: url('../../icons/Logo-1Code-azul-branco-e-laranja-VETORIZADO-PNG-1-1024x376.webp');
+  background-repeat: no-repeat;
+  background-size: 190px;
+  width: 210px;
+  height: 70px;
 }

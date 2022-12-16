@@ -22,11 +22,6 @@ app.get('/login', async (req, res) => {
     res.status(200).send(logins)
 });
 
-// retorna usuario pelo id e exibe o email
-app.get('/user/:id', async (req, res) => {
-    let user = await funcLogin.getLoginByID(req.params.id);
-    res.status(200).send({ success: true, user })
-})
 
 // verifica se o usuario e senha existem
 app.post('/user', async (req, res) => {
@@ -34,8 +29,8 @@ app.post('/user', async (req, res) => {
     console.log(userLogin);
     let user = await funcLogin.autentica(userLogin.Login, userLogin.Senha);
     console.log(user)
-    res.status(200).send({ success: true, user })
-})
+    res.status(200).send({ success: true, user})
+});
 
 
 // Criar usuario

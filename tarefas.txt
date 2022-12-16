@@ -12,7 +12,7 @@ Back-end:
 [] Criar viagens para cada usuario e opçao de CRUD nas viagens do banco
 Neste exemplo o usuario vai ter acesso ao "listViagens" onde vai poder criar/editar/apagar as suas 
 {
-		"Usuario": "Lucas Santos ",
+		"Usuario": "Lucas Santos",
 		"Login": "lucas2022@gmail.com",
 		"Senha": "lucas2022",
 	  "listViagens":
@@ -32,3 +32,4 @@ Front-end:
 
 Ajuda:
 Aulas do gravadas do Professor: https://www.youtube.com/@pedroazevedo6536
+https://www.freecodecamp.org/portuguese/news/como-persistir-um-usuario-conectado-com-react/

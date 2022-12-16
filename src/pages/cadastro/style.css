@@ -29,3 +29,12 @@
     color: #77ffc0;
 
 }
+
+.btn-tela{
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 3vh;
+    background-color: aqua;
+    border: none;
+    color: rgb(0, 0, 0);
+}

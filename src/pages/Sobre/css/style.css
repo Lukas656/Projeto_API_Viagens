@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+
+}
+
+.main {
+    background-image: url(../img/flechaverde.jpg);
+}
+
+/*Começo da faixa about*/
+
+.card-about{
+    text-align: center;
+    /* background-color: #23232E; */
+}
+.card-about h3{
+    background-color: #23232E;
+    width: 100%;
+    padding: 25px;
+}
+.about {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    color: #fff;
+}
+
+
+/*Esse é pro card de Pedro*/
+.container1 {
+    display: flex;
+    justify-content: center;
+}
+
+/**/
+
+.cards {
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 100px;
+    background-color: #2F2841;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.text-nome {
+    text-align: center;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.texto2 {
+    text-align: center;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.social-midias li {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.logo-icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+/*Container 2 pros outros cards*/
+.container2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-sobre-projeto {
+    text-align: center;
+    background-color: #23232E;
+    width: 100%;
+    margin-top: 55px;
+    padding: 25px;
+}
+
+.containerProjeto {
+
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+    background-color: #2F2841;
+    margin-bottom: 0px;
+    display: flex;
+
+
+}
+
+.imagem-projeto {
+
+    display: flex;
+    margin-left: 15px;
+    position: absolute;
+}
+
+.img-projeto {
+    width: 110%;
+    min-height: 50px;
+    margin-top: 80px;
+
+}
+
+.texto-projeto2 {
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    max-width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 15%;
+    margin-top: 15px;
+}
+
+.logo-icons2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+
+
+.s-m {
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+}

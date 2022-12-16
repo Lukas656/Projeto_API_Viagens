@@ -19,7 +19,6 @@ function Header() {
                     <li><Link to="/Login">Login</Link></li>
                     <li><Link to="/Cadastro">Cadastro</Link></li>
                 </ul>
-
             </nav>
         </header>
     )
