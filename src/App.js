@@ -16,7 +16,7 @@ function App() {
                 <Route path="/Sobre" element={<Sobre />} />
                 <Route path="/Login" element={<Login />} />
                 <Route path="/Cadastro" element={<Cadastro />} />
-                <Route path="/User" element={<User />} />
+                <Route path="/:User" element={<User />} />
             </Routes>
         </Router>
         </>

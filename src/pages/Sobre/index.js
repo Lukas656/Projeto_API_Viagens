@@ -4,6 +4,7 @@ import './css/style.css'
 // Importando imagens do projeto
 import Pedro from "./img/Pedro.jpg";
 import Marcos from "./img/Marcos.jpg";
+import LucasS from "./img/Lucas-Santos.jpeg";
 import github from "./img/icons/github.jpg";
 import linkedin from "./img/icons/linkedin.png";
 import instagram from "./img/icons/instagram.jpg";
@@ -64,7 +65,7 @@ function Sobre() {
             <div className="container2">
                 <div className="cards">
                     <div className="imagem">
-                        <img className="img" src="https://lh3.googleusercontent.com/a/AEdFTp5i9kzXLUB7sG7gXjjqf-ior-LfWsBOpWvoEFpLog=s192-c-rg-br100" alt=""></img>
+                        <img className="img" src={LucasS} alt=""></img>
                     </div>
                     <div className="texto">
                         <h2 className="text-nome">Lucas Santos</h2>
@@ -100,7 +101,7 @@ function Sobre() {
                     </div>
 
                     <div className="texto">
-                        <h2 className="text-nome">3</h2>
+                        <h2 className="text-nome">Lukas Mansoreitch</h2>
                     </div>
 
                     <div className="social-midias">
