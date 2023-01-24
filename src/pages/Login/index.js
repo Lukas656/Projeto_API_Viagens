@@ -4,9 +4,6 @@ import { useState } from 'react';
 import './style.css'
 import axios from 'axios';
 
-export function testar() {
-    alert("test!!")
-}
 
 function Login() {
 
