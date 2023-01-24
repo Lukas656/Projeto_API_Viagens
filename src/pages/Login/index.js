@@ -1,32 +1,35 @@
+import { useState } from 'react'
 import Header from "../../component/Header"
 import Footer from "../../component/Header/footer"
-import { useState } from 'react';
 import './style.css'
 import axios from 'axios';
 
 
 function Login() {
+    const [name, setName] = useState()
+    const [senha, setSenha] = useState()
 
-    const validalogin = async function () {
-        let usuario = document.getElementById('usuario').value
-        let senha = document.getElementById('senha').value
-        let user = { Login: usuario, Senha: senha }
+     const validalogin = async function (e) {
+        e.preventDefault()
+         let user = { Login: name, Senha: senha}
 
 
-        let res = await axios.post("http://localhost:5000/user", user)
+         let res = await axios.post("http://localhost:5000/user", user)
         let data = await res.data;
 
-        if (data.user == "Usuário não Encontrado, verifique se os dados estão corretos!!") {
-            alert(data.user);
-            console.log(data.user);
+         if (data.user == "Usuário não Encontrado, verifique se os dados estão corretos!!") {
+             console.log("NAO Funcionou.............................");
+             alert(data.user);
 
-        } else {
-            alert(data.user);
-            console.log(data.user);
+         } else {
+             console.log(`Bem vindo ${data.user} !!`);
+             alert(`Bem vindo ${data.user} !!`);
+             window.open(`http://localhost:3000/${data.user}`);
+            }
         }
-    }
 
-    return (
+        
+        return (
         <>
             <Header />
             <form className="main-login" >
@@ -40,12 +43,14 @@ function Login() {
                         <div className="textfield">
                             <label for="usuario" htmlFor="username">Usuário</label>
                             <input type="text"
-                                name="usuario"
+                                name="Digite seu email"
                                 id="usuario"
                                 placeholder="Usuário"
                                 autoFocus required
+                                onChange={(e) => setName(e.target.value)}
                             >
                             </input>
+                           
                         </div>
 
                         <div className="textfield">
@@ -54,6 +59,7 @@ function Login() {
                                 name="senha"
                                 id="senha" required
                                 placeholder="insira uma senha"
+                                onChange={(e) => setSenha(e.target.value)}
                             >
                             </input>
                         </div>
