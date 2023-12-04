@@ -6,7 +6,7 @@ function Header() {
     return (
         <header>
             <nav>
-                <a className="logo" href="/"><Link to="/">Glass Viagens</Link></a>
+                <a className="logo" href="/"><Link to="/">Projeto Viagens</Link></a>
                 <div className="mobile-menu">
                     <div className="line1"></div>
                     <div className="line2"></div>

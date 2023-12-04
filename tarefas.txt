@@ -1,42 +1,51 @@
- 
-  Tarefas para o site viagens
+  // conexão com o banco de dados
+    const uri = "mongodb://localhost:27017";
+    const voo = new MongoClient(uri);
+    await voo.connect();
+    const db = voo.db("primeiroDB");
+    return db.collection("Login");
 
-Back-end:
 
-[] Usar o axios pra receber as chamadas 
-[] Pagina Sobre criar o html na pasta pages/Sobre/index.js
-[x] Conexao com o banco de dados
-[x] Conectar o login
-[x] Criar Conta
-
-[] Criar viagens para cada usuario e opçao de CRUD nas viagens do banco
-Neste exemplo o usuario vai ter acesso ao "listViagens" onde vai poder criar/editar/apagar as suas 
+https://github.com/Lukas656/SKY-backend/blob/main/src/routes/index.js
 {
-		"Usuario": "Lucas Santos",
-		"Login": "lucas2022@gmail.com",
-		"Senha": "lucas2022",
-		"classe": 1, 
-	    "listViagens":
-	{
-		"vooId1": {"origem": "Sao paulo","destino": "Rio de Janeiro","passagem": "120,00"},
-		"vooId2": {"origem": "Sao paulo","destino": "Rio de Janeiro","passagem": "120,00"}
-	}
-
-	
+  "usuarios": [
+    {
+	  "img": "https://i.ibb.co/fGtvpsp/thunder-man.png"
+      "nome": "Lucas S Nascimento",
+      "email": "lucas@gmail.com",
+      "senha": "lucas123",
+      "data_nascimento": "09/07/2002",
+      "endereco": {
+        "bairro": "JD São Paulo ",
+        "estado": "São Paulo (SP)",
+        "capital": "São Paulo"
+        "cep": "12345-678"
+      }
+	  "historico_viagens":[
+	  {
+		"dia": "",
+		"lugar": "",
+		"valor": null
+	  },
+	  ]
+	  "nova_viagem":
+	  {
+		"dia": "",
+		"lugar": "",
+		"valor": null
+	  },
+    },
+  ]
 }
 
-{
-		"Usuario": "Lucas Santos",
-		"Login": "lucas2022@gmail.com",
-		"Senha": "lucas2022",
-	  "listViagens":
-	{
-		"vooId1": {"origem": "Sao paulo","destino": "Rio de Janeiro","passagem": "120,00"},
-		"vooId2": {"origem": "Sao paulo","destino": "Rio de Janeiro","passagem": "120,00"}
-	}
 
-	
-}
+
+
+
+
+
+
+
 Ajuda:
 Aulas do gravadas do Professor: https://www.youtube.com/@pedroazevedo6536
 https://www.freecodecamp.org/portuguese/news/como-persistir-um-usuario-conectado-com-react/

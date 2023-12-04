@@ -4,9 +4,9 @@
 }
 
 .bg{
-    background: url("fundo.jpg") no-repeat center center;
+    background: url("Project.png") no-repeat center center;
     background-size: cover;
-    height: 92vh;
+    height: 90vh;
     width: 100%;
     
   } 

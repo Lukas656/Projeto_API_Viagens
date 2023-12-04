@@ -1,0 +1,253 @@
+{
+  "usuarios": [
+    {
+      "nome": "Lucas S Nascimento",
+      "email": "lucas@gmail.com",
+      "senha": "lucas123",
+      "data_nascimento": "09/07/2002",
+      "endereco": {
+        "bairro": "JD São Paulo ",
+        "estado": "São Paulo (SP)",
+        "capital": "São Paulo"
+        "cep": "12345-678"
+      }
+	  "historico_viagens":[
+	  {
+		"dia": "",
+		"lugar": "",
+		"valor": null
+	  },
+	  ]
+	  "nova_viagem":
+	  {
+		"dia": "",
+		"lugar": "",
+		"valor": null
+	  },
+    },
+  ]
+}
+
+
+
+-----------------------------------------------------------------------------------------------
+{
+  "estados": [
+    {
+      "url": "link-para-imagem-do-Acre",
+      "estado": "Acre (AC)",
+      "capital": "Rio Branco",
+      "preco": 1500.00,
+      "descricao": "Explore a natureza exuberante da Amazônia no Acre.",
+      "dias": 7
+    },
+    {
+      "url": "link-para-imagem-do-Alagoas",
+      "estado": "Alagoas (AL)",
+      "capital": "Maceió",
+      "preco": 1200.00,
+      "descricao": "Relaxe nas belas praias de Alagoas e aproveite o sol.",
+      "dias": 5
+    },
+    {
+      "url": "link-para-imagem-do-Amapá",
+      "estado": "Amapá (AP)",
+      "capital": "Macapá",
+      "preco": 1800.00,
+      "descricao": "Descubra a diversidade cultural e histórica do Amapá.",
+      "dias": 8
+    },
+    {
+      "url": "link-para-imagem-do-Amazonas",
+      "estado": "Amazonas (AM)",
+      "capital": "Manaus",
+      "preco": 2000.00,
+      "descricao": "Explore a selva amazônica e conheça a cultura indígena.",
+      "dias": 10
+    },
+    {
+      "url": "link-para-imagem-da-Bahia",
+      "estado": "Bahia (BA)",
+      "capital": "Salvador",
+      "preco": 2500.00,
+      "descricao": "Mergulhe na rica cultura afro-brasileira da Bahia.",
+      "dias": 7
+    },
+    {
+      "url": "link-para-imagem-do-Ceará",
+      "estado": "Ceará (CE)",
+      "capital": "Fortaleza",
+      "preco": 2200.00,
+      "descricao": "Desfrute das praias e da animada vida noturna de Fortaleza.",
+      "dias": 6
+    },
+    {
+      "url": "link-para-imagem-do-Distrito-Federal",
+      "estado": "Distrito Federal (DF)",
+      "capital": "Brasília",
+      "preco": 2800.00,
+      "descricao": "Conheça a arquitetura moderna e os pontos históricos de Brasília.",
+      "dias": 4
+    },
+    {
+      "url": "link-para-imagem-do-Espírito-Santo",
+      "estado": "Espírito Santo (ES)",
+      "capital": "Vitória",
+      "preco": 1600.00,
+      "descricao": "Aproveite as praias tranquilas e a natureza do Espírito Santo.",
+      "dias": 5
+    },
+    {
+      "url": "link-para-imagem-de-Goiás",
+      "estado": "Goiás (GO)",
+      "capital": "Goiânia",
+      "preco": 2100.00,
+      "descricao": "Explore a história colonial de Goiás e suas belezas naturais.",
+      "dias": 7
+    },
+    {
+      "url": "link-para-imagem-do-Maranhão",
+      "estado": "Maranhão (MA)",
+      "capital": "São Luís",
+      "preco": 1900.00,
+      "descricao": "Conheça o centro histórico de São Luís e os Lençóis Maranhenses.",
+      "dias": 8
+    },
+    {
+      "url": "link-para-imagem-do-Mato-Grosso",
+      "estado": "Mato Grosso (MT)",
+      "capital": "Cuiabá",
+      "preco": 2300.00,
+      "descricao": "Explore a natureza selvagem e as belezas do Pantanal.",
+      "dias": 9
+    },
+    {
+      "url": "link-para-imagem-do-Mato-Grosso-do-Sul",
+      "estado": "Mato Grosso do Sul (MS)",
+      "capital": "Campo Grande",
+      "preco": 1700.00,
+      "descricao": "Descubra a biodiversidade do Pantanal sul-mato-grossense.",
+      "dias": 6
+    },
+    {
+      "url": "link-para-imagem-de-Minas-Gerais",
+      "estado": "Minas Gerais (MG)",
+      "capital": "Belo Horizonte",
+      "preco": 2700.00,
+      "descricao": "Explore as cidades históricas e as montanhas de Minas Gerais.",
+      "dias": 8
+    },
+    {
+      "url": "link-para-imagem-do-Pará",
+      "estado": "Pará (PA)",
+      "capital": "Belém",
+      "preco": 2400.00,
+      "descricao": "Conheça a culinária paraense e os encantos naturais do Pará.",
+      "dias": 7
+    },
+    {
+      "url": "link-para-imagem-da-Paraíba",
+      "estado": "Paraíba (PB)",
+      "capital": "João Pessoa",
+      "preco": 1400.00,
+      "descricao": "Relaxe nas praias paradisíacas e conheça a cultura paraibana.",
+      "dias": 5
+    },
+    {
+      "url": "link-para-imagem-do-Paraná",
+      "estado": "Paraná (PR)",
+      "capital": "Curitiba",
+      "preco": 2600.00,
+      "descricao": "Descubra a arquitetura e os parques de Curitiba.",
+      "dias": 6
+    },
+    {
+      "url": "link-para-imagem-de-Pernambuco",
+      "estado": "Pernambuco (PE)",
+      "capital": "Recife",
+      "preco": 2000.00,
+      "descricao": "Mergulhe na cultura e nas praias de Pernambuco.",
+      "dias": 7
+    },
+    {
+      "url": "link-para-imagem-do-Piauí",
+      "estado": "Piauí (PI)",
+      "capital": "Teresina",
+      "preco": 1800.00,
+      "descricao": "Explore a diversidade natural e cultural do Piauí.",
+      "dias": 8
+    },
+    {
+      "url": "link-para-imagem-do-Rio-de-Janeiro",
+      "estado": "Rio de Janeiro (RJ)",
+      "capital": "Rio de Janeiro",
+      "preco": 3000.00,
+      "descricao": "Viva a animada atmosfera carioca e as praias icônicas.",
+      "dias": 7
+    },
+    {
+      "url": "link-para-imagem-do-Rio-Grande-do-Norte",
+      "estado": "Rio Grande do Norte (RN)",
+      "capital": "Natal",
+      "preco": 1600.00,
+      "descricao": "Desfrute das dunas e praias encantadoras de Natal.",
+      "dias": 6
+    },
+    {
+      "url": "link-para-imagem-do-Rio-Grande-do-Sul",
+      "estado": "Rio Grande do Sul (RS)",
+      "capital": "Porto Alegre",
+      "preco": 2500.00,
+      "descricao": "Explore a cultura gaúcha e as belezas naturais do sul.",
+      "dias": 7
+    },
+    {
+      "url": "link-para-imagem-de-Rondônia",
+      "estado": "Rondônia (RO)",
+      "capital": "Porto Velho",
+      "preco": 1900.00,
+      "descricao": "Descubra a diversidade da Amazônia ocidental em Rondônia.",
+      "dias": 8
+    },
+    {
+      "url": "link-para-imagem-de-Roraima",
+      "estado": "Roraima (RR)",
+      "capital": "Boa Vista",
+      "preco": 1700.00,
+      "descricao": "Explore as paisagens únicas e a cultura indígena de Roraima.",
+      "dias": 9
+    },
+    {
+      "url": "link-para-imagem-de-Santa-Catarina",
+      "estado": "Santa Catarina (SC)",
+      "capital": "Florianópolis",
+      "preco": 2800.00,
+      "descricao": "Relaxe nas praias e explore a natureza exuberante de Santa Catarina.",
+      "dias": 7
+    },
+    {
+      "url": "link-para-imagem-de-São-Paulo",
+      "estado": "São Paulo (SP)",
+      "capital": "São Paulo",
+      "preco": 3200.00,
+      "descricao": "Viva a agitação cultural e urbana da maior cidade do Brasil.",
+      "dias": 6
+    },
+    {
+      "url": "link-para-imagem-de-Sergipe",
+      "estado": "Sergipe (SE)",
+      "capital": "Aracaju",
+      "preco": 1500.00,
+      "descricao": "Mergulhe na cultura nordestina e desfrute das praias de Sergipe.",
+      "dias": 5
+    },
+    {
+      "url": "link-para-imagem-do-Tocantins",
+      "estado": "Tocantins (TO)",
+      "capital": "Palmas",
+      "preco": 1400.00,
+      "descricao": "Explore as belezas naturais e a cultura do Tocantins.",
+      "dias": 6
+    }
+  ]
+}
