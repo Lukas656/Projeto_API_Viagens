@@ -38,5 +38,23 @@ async function authentication(req, resp) {
 		});
 	}
 }
+async function trip(req, resp){
+	try {
+		const data = req.body;
 
-module.exports = { createUser, authentication};
+		let newData = await userModels.newTrip(data);
+
+		if (newData === false) {
+			return resp.status(401).send({ 'menssagem': 'Não foi possival agendar esta viagem, Verifique se todos os campos foram preenchidos' });
+		}
+		resp.status(200).send(newData);
+
+
+	} catch (error) {
+		resp.status(500).send({
+			error: 'Error',
+			message: error.message
+		});
+	}
+}
+module.exports = { createUser, authentication, trip};

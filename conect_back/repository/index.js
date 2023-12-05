@@ -14,6 +14,13 @@ const isConnected = () => {
 	return !!client && !!client.topology && client.topology.isConnected();
 };
 
+
+async function allTrip(collectionName) {
+	if (!isConnected()) {
+		await connect();
+	}
+	return db.collection(collectionName).find();
+}
 async function findByFilter(collectionName, filter) {
 	if (!isConnected()) {
 		await connect();
@@ -28,6 +35,7 @@ async function insertOne(collectionName, data) {
 }
 
 module.exports = {
+	allTrip,
 	findByFilter,
 	insertOne,
 
